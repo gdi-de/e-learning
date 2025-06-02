@@ -1,6 +1,9 @@
-# E-Learning for OGC
+# Deprecated E-Learning for OGC
 
 ## Introduction
+
+This repository has been deprecated and archived.
+
 This repository is used to share and plan E-Learning material related to OGC Standards.
 The [wiki](https://github.com/opengeospatial/e-learning/wiki/Goal-and-Plan) provides more details.
 The web page created from this material is available [here](http://opengeospatial.github.io/e-learning).
