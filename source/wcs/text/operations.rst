@@ -29,17 +29,22 @@ First the client application needs to find out what coverages are offered by the
 
 The following table defines some of the parameters allowed in a WCS **GetCapabilities** KVP request. 
 
-======================= ============== ==========================================================================================================================================================================================================
-**Parameter**           **Mandatory** **Description**
+.. list-table:: GetCapabilities Parameter
+   :widths: 30 80 80
+   :header-rows: 1
 
-                        **Optional**
-======================= ============== ==========================================================================================================================================================================================================
-REQUEST=GetCapabilities Mandatory      This parameter identifies the operation that is to be invoked by the request. 
-SERVICE=WCS             Mandatory      This parameter is used to indicate which of the available service types, at a particular server, is being invoked. When invoking a web feature service, the value of the service parameter shall be "WCS".
-VERSION                 Optional       This is used to indicate to which version of the WCS specification the request encoding conforms.
-======================= ============== ==========================================================================================================================================================================================================
-
- 
+   * - **Parameter**
+     - **Mandatory/Optional**
+     - **Description**
+   * - REQUEST=GetCapabilities
+     - Mandatory
+     - This parameter identifies the operation that is to be invoked by the request.
+   * - SERVICE=WCS
+     - Mandatory
+     - This parameter is used to indicate which of the available service types, at a particular server, is being invoked. When invoking a web feature service, the value of the service parameter shall be "WCS".
+   * - VERSION
+     - Optional
+     - This is used to indicate to which version of the WCS specification the request encoding conforms.
 
 An example **GetCapabilities** request that can be used to identify the coverages that are available from the service is shown below.
 
@@ -54,21 +59,28 @@ Having identified the available coverages, the next step in the interaction betw
 
 The following table defines the parameters that are allowed in a **DescribeCoverage** KVP request.
 
-======================== ============== ==========================================================================================================================================================================================================
-**Parameter**            **Mandatory** **Description**
+.. list-table:: Describe Coverage Parameter
+   :widths: 30 80 80
+   :header-rows: 1
 
-                         **Optional**
-======================== ============== ==========================================================================================================================================================================================================
-REQUEST=DescribeCoverage Mandatory      This parameter identifies the operation that is to be invoked by the request. 
-SERVICE=WCS              Mandatory      This parameter is used to indicate which of the available service types, at a particular server, is being invoked. When invoking a web feature service, the value of the service parameter shall be "WCS".
-VERSION                  Mandatory      This is used to indicate to which version of the WCS specification the request encoding conforms.
-EXTENSION                Optional       Any ancillary information to be sent from the client to the server
-
- 
-COVERAGEID               Mandatory      The identifier of the coverage that is to be described in the response.
-======================== ============== ==========================================================================================================================================================================================================
-
- 
+   * - **Parameter**
+     - **Mandatory/Optional**
+     - **Description**
+   * - REQUEST=DescribeCoverage
+     - Mandatory
+     - This parameter identifies the operation that is to be invoked by the request.
+   * - SERVICE=WCS
+     - Mandatory
+     - This parameter is used to indicate which of the available service types, at a particular server, is being invoked. When invoking a web feature service, the value of the service parameter shall be "WCS".
+   * - VERSION
+     - Mandatory
+     - This is used to indicate to which version of the WCS specification the request encoding conforms.
+   * - EXTENSION
+     - Optional
+     - Any ancillary information to be sent from the client to the server
+   * - COVERAGEID
+     - Mandatory
+     - The identifier of the coverage that is to be described in the response.
 
 An example **DescribeCoverage** request is shown below. Note that the response is a CoverageDescription XML document. This file would inform the client application about the structure of the coverage, for example dimensions if the coverage is gridded.
 
