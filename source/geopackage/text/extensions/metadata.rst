@@ -47,7 +47,7 @@ Add a row to this table for each metadata document as described in Table 2.
     - URI reference to the metadata structure definition authority (e.g., http://metadata.ces.mil/dse/ns/GSIP/nmis/2.2.0/doc for NMIS)
   * - ``mime_type``
     - MIME encoding of metadata (e.g., text/xml)
-  * ``metadata``
+  * - ``metadata``
     - The actual metadata document
 
 gpkg_metadata_reference
