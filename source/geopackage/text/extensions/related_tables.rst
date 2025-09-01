@@ -104,7 +104,7 @@ When the ``relation_name`` of a relationship is "*media*", the related table mus
     - Primary Key
   * - ``data``
     - BLOB containing multimedia content
-  * ``content_type``
+  * - ``content_type``
     - MIME type of data
 
 .. hint::
