@@ -100,7 +100,7 @@ To define a numeric range for an column, add one row to ``gpkg_data_column_const
     - Maximum value
   * - ``max_is_inclusive``
     - *0* (false) if max value is exclusive, or *1* (true) if min value is inclusive
-  * ``description``
+  * - ``description``
     - Description of the constraint
 
 Defining a GLOB
