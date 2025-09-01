@@ -16,7 +16,6 @@ jobs:
           pip install sphinx sphinx_rtd_theme myst_parser
       - name: Sphinx build
         run: |
-          cd e-learning
           make clean
           make ogc
       - name: Deploy to GitHub Pages
