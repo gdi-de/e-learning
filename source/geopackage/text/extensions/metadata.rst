@@ -64,9 +64,9 @@ Add a row to this table for each GeoPackage, table, column, row, or row/column t
   * - ``reference_scope``
     - one of "geopackage", "table", "column", "row", or "row/col"
   * - ``table_name``
-    - _user-defined table name_ (or *NULL* for whole GeoPackage)
+    - _user-defined table **name** (or *NULL* for whole GeoPackage)
   * - ``column_name``
-    - for ``reference_scope`` of "column" or "row/col", _column name in user-defined table_ (*NULL* otherwise)
+    - for ``reference_scope`` of "column" or "row/col", _column name in user-defined **table** (*NULL* otherwise)
   * - ``row_id_value``
     - for ``reference_scope`` of "row" or "row/col", the row ID (*NULL* otherwise)
   * - ``timestamp``
