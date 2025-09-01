@@ -89,7 +89,7 @@ In the example above, the parameters (and values) being passed to the SOS server
 The table below summarizes the parameters and values required to perform the request.
 
 .. list-table:: Parameters of the GetCapabilities Operation
-   :widths: 15 15 70
+   :widths: 15 70
    :header-rows: 1
 
    * - **Parameter**
@@ -107,7 +107,7 @@ Response
 The response is a Capabilities XML document with a detailed description of the SOS service.  It contains three main sections:
 
 .. list-table:: Sections Capabilities Document
-   :widths: 20 80
+   :widths: 30 80
    :header-rows: 1
 
    * - **ServiceIdentification**
