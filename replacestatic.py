@@ -7,7 +7,7 @@ import os, fnmatch
 def findReplace(directory, find, replace, filePattern):
     for path, dirs, files in os.walk(os.path.abspath(directory)):
         for filename in fnmatch.filter(files, filePattern):
-            print filename
+            print(filename)
             filepath = os.path.join(path, filename)
             with open(filepath) as f:
                 s = f.read()
